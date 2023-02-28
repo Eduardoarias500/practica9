@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#ff0404 ;
+    color: #000080;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #21f533;
+    color: #000080;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #5238e2;
+    padding: 15px;
+    color: #000080;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+}
+.footer {
+    background-color: #bcee06;
+    color: #060608;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+   
+}
+
+.image2{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){ 
+   .image1{
+     display: none;
+   }
+
+   .image2{
+     display: block;
+}
+}
+
+#datos{
+        background:#f0f0f3;
+        color:#111010;
+        height: auto;
+        width:auto;
+        padding:0 auto;
+        border-radius:6px;
+        font-size:13px;
+        border: 5px solid;
+      }
+
+    
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Unidad 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://eduardoarias500.github.io/practica1/">Practica 1</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica2/">Practica 2</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica3/">Practica 3</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica4/">Practica 4</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica5/">Practica 5</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica6/">Practica 6</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica7/">Practica 7</a></li>
+    <li><a href="https://eduardoarias500.github.io/practica8/">Practica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+    <center><h1 id="cv"> MI CV</h1></center>
+    <h2>Video </h2>
+    <video src="media/presentacion.mp4" controls width="250px" height="300px"></video>
+   <h2>Direccion</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1122.3485552682191!2d-96.97691404387697!3d18.881956261936192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676945716487!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <br>
+   <h2>Datos</h2>
+    <div id="datos">
+        <h2>Datos personales</h2>
+        <ul>
+            <li>Nombre completo: <b>Eduardo Velazquez Arias</b></li>
+            <li>Fecha de nacimiento: <b>21/06/2002</b></li>
+            <li>Lugar de nacimiento: <b>Cordoba</b></li>
+        </ul>
+<br>
+     <h2>Formacion academica</h2>
+     <ul>
+        <li>2008-2014: <b> Escuela primaria Ignacio Aldama </b></li>
+        <li>2014-2017: <b>Telesecundaria Alvaro Galvez y Fuentes</b></li>
+        <li>2017-2020: <b>Centro de Bachillerato Tecnologico Industrial y de Servicios Numero 47</b></li>
+    </ul>
+<br>
+<h2>Experiencia laboral</h2>
+<ul>
+    <li>2019-2022: <b>Pequeños trabajos de contaduria</b></li>
+    <li>2021-2022: <b>Vendedor de bienes raices</b></li>
+</ul>
+    </div>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    
+    <img src="media/logoshadow.jpg"  width="250px" height="350px" class="image1"/>
+   <center> <img src="media/smash.jpg" width="250px" height="250px" class="image2"/> </center>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
